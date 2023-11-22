@@ -41,10 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Canvas
+  - name: Text
     uniqueID: 3057617991
     locked: 0
-  - name: GameOverScreen
+  - name: Sprite
     uniqueID: 4164778777
     locked: 0
   - name: 
