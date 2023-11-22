@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController1 : MonoBehaviour
 {
 
-    public static SceneController instance;
+    public static SceneController1 instance;
 
     [SerializeField] Animator transitionAnim;
 

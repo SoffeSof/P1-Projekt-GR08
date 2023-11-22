@@ -14,6 +14,7 @@ public class BarManager : MonoBehaviour
     public float moneyValueTotal;
     public Button choiceB1Button;
     public TMP_Text moneyValueTotalText;
+    public SceneController1 sceneController;
     
     [SerializeField]
     private GameObject smiley1, smiley2, smiley3, smiley4;
@@ -34,7 +35,10 @@ public class BarManager : MonoBehaviour
     /// </summary>
     public void LoadGameOverScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        //Calls the method from the Scene Controller1 script, in order to get a Coroutine and play our animations
+        sceneController.NextScene();
     }
 
     /// <summary>

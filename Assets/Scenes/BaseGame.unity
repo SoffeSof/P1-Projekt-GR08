@@ -7292,6 +7292,7 @@ MonoBehaviour:
   moneyValueTotal: 7
   choiceB1Button: {fileID: 0}
   moneyValueTotalText: {fileID: 1136676440}
+  sceneController: {fileID: 1559585296}
   smiley1: {fileID: 309132315}
   smiley2: {fileID: 1066691151}
   smiley3: {fileID: 352797974}
@@ -14732,6 +14733,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
+--- !u!114 &1559585296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 613511532599609054, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
+  m_PrefabInstance: {fileID: 1559585295}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46911e27b086ade49a9b59e8840c4f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1581652189
 GameObject:
   m_ObjectHideFlags: 0
