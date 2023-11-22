@@ -478,9 +478,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1640160803}
-        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: LoadCharacterSelection
+      - m_Target: {fileID: 6113409598727582175}
+        m_TargetAssemblyTypeName: SceneController1, Assembly-CSharp
+        m_MethodName: NextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3020,6 +3020,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
+--- !u!114 &6113409598727582175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 613511532599609054, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
+  m_PrefabInstance: {fileID: 6113409598727582174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46911e27b086ade49a9b59e8840c4f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

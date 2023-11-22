@@ -18,6 +18,9 @@ public class ButtonManager : MonoBehaviour
     private float currentCostOfChoice1;
     private float currentCostOfChoice2;
 
+    [Header("SceneController")]
+    public SceneController1 sceneController;
+
     /// <summary>
     /// Disables (makes buttons non-interactable) if the costOfChoice is higher than the ammount of money the player has.
     /// </summary>
@@ -47,7 +50,9 @@ public class ButtonManager : MonoBehaviour
     {
         if (!button1.interactable && !button2.interactable && !askANeighborButton.activeInHierarchy)
         {
-            barManager.LoadGameOverScreen();
+            //barManager.LoadGameOverScreen();
+            sceneController.NextScene();
+
         } 
     }
 

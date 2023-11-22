@@ -40,6 +40,9 @@ public class J_GameState : MonoBehaviour
     public float temporaryIncomeChangeJ2;
     public float permanentIncomeChangeJ2;
 
+    [Header("SceneController")]
+    public SceneController1 sceneController;
+
     public void ButtonI1Click()
     {
         buttonManager.OnChoiceButtonClick(decisionJ, impactJ1, continueButtonJ);
@@ -78,7 +81,9 @@ public class J_GameState : MonoBehaviour
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
             //4: Loads winning screen
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            // GAMMLE KODE: SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
+            sceneController.PlayWinningScene();
         }
     }
 

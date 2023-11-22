@@ -15,6 +15,11 @@ public class SceneController1 : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
+    public void PlayWinningScene()
+    {
+        StartCoroutine (LoadWinningScene());
+    }
+
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("End");
@@ -22,6 +27,17 @@ public class SceneController1 : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+
+        transitionAnim.SetTrigger("Start");
+    }
+
+    IEnumerator LoadWinningScene()
+    {
+        transitionAnim.SetTrigger("End");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 2);
 
         transitionAnim.SetTrigger("Start");
     }
