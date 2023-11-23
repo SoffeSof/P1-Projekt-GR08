@@ -72,7 +72,7 @@ public class I_GameState : MonoBehaviour
             buttonManager.DisableButton(jGamestate.costOfChoiceJ1, jGamestate.buttonJ1, jGamestate.costOfChoiceJ2, jGamestate.buttonJ2);
 
             //3: updater Income for the day text & permanent income
-            endOfDayManager.UpdateIncomeForTheDay1(choiceI1Picked, costOfChoiceI1, costOfChoiceI2);
+            endOfDayManager.UpdateIncomeForTheDay1(choiceI1Picked, temporaryIncomeChangeI1, temporaryIncomeChangeI2);
             endOfDayManager.UpdateAverageDailyIncome2(choiceI1Picked, permanentIncomeChangeI1, permanentIncomeChangeI2);
 
             //4: fra factB til endOfTheDayScreen og tilføjer daily income til ens moneybar 

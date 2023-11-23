@@ -39,7 +39,7 @@ public class G_GameState : MonoBehaviour
     public float costOfChoiceG2;
     public float healthOfChoiceG2;
     public float moodOfChoiceG2;
-    public float temporaryIncomeChangeg2;
+    public float temporaryIncomeChangeG2;
     public float permanentIncomeChangeG2;
 
 
@@ -71,7 +71,7 @@ public class G_GameState : MonoBehaviour
         else if (factG.activeInHierarchy)
         {
             //2: updater Income for the day text & permanent income
-            endOfDayManager.UpdateIncomeForTheDay2(choiceG1Picked, costOfChoiceG1, costOfChoiceG2);
+            endOfDayManager.UpdateIncomeForTheDay2(choiceG1Picked, temporaryIncomeChangeG1, temporaryIncomeChangeG2);
             endOfDayManager.UpdateAverageDailyIncome2(choiceG1Picked, permanentIncomeChangeG1, permanentIncomeChangeG2);
 
             //3: enables end of day screen og opdaterer moneybar med daily income

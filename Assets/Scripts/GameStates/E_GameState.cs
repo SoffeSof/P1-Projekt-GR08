@@ -70,7 +70,7 @@ public class E_GameState : MonoBehaviour
         else if (factE.activeInHierarchy)
         {
             //2: update daily income text og permanent income
-            endOfDayManager.UpdateIncomeForTheDay1(choiceE1Picked, costOfChoiceE1, costOfChoiceE2);
+            endOfDayManager.UpdateIncomeForTheDay1(choiceE1Picked, temporaryIncomeChangeE1, temporaryIncomeChangeE2);
             endOfDayManager.UpdateAverageDailyIncome1(choiceE1Picked, permanentIncomeChangeE1, permanentIncomeChangeE2);
 
             if (choiceE1Picked)

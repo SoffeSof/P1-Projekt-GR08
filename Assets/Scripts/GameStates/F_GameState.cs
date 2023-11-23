@@ -69,7 +69,7 @@ public class F_GameState : MonoBehaviour
         else if (factF.activeInHierarchy)
         {
             //2: updater Income for the day text & permanent income
-            endOfDayManager.UpdateIncomeForTheDay2(choiceF1Picked, costOfChoiceF1, costOfChoiceF2);
+            endOfDayManager.UpdateIncomeForTheDay2(choiceF1Picked, temporaryIncomeChangeF1, temporaryIncomeChangeF2);
             endOfDayManager.UpdateAverageDailyIncome2(choiceF1Picked, permanentIncomeChangeF1, permanentIncomeChangeF2);
 
             //3: enables end of day screen og opdaterer moneybar med daily income

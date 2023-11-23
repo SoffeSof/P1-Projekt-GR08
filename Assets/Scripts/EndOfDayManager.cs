@@ -15,7 +15,7 @@ public class EndOfDayManager : MonoBehaviour
     public TMP_Text incomeForTheDayText;
     public TMP_Text AverageDailyIncomeText;
 
-    private float averageDailyIncome = 6;
+    private float averageDailyIncome = 5;
     private float incomeForTheDay;
 
     public GameObject endOfDayScreen;
@@ -118,6 +118,7 @@ public class EndOfDayManager : MonoBehaviour
     {
         endOfDayScreen.SetActive(false);
         continueButton.SetActive(false);
+        buttonManager.villageBackground.SetActive(true);
 
         if (choicePicked1)
         {

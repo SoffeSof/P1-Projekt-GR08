@@ -35,6 +35,7 @@ public class D_GameState : MonoBehaviour
 
     [Header("Choice 2")]
     public float costOfChoiceD2;
+    public float unexpectedExpenseD2;
     public float healthOfChoiceD2;
     public float moodOfChoiceD2;
     public float temporaryIncomeChangeD2;
@@ -54,7 +55,8 @@ public class D_GameState : MonoBehaviour
         buttonManager.OnChoiceButtonClick(decisionD, impactD2, continueButtonD);
         barManager.UpdateHealthBar(healthOfChoiceD2);
         barManager.UpdateMoodBar(moodOfChoiceD2);
-        barManager.UpdateMoneyBar(costOfChoiceD2);
+        barManager.UpdateMoneyBar(unexpectedExpenseD2);
+
         choiceD2Picked = true;
     }
 
@@ -71,7 +73,7 @@ public class D_GameState : MonoBehaviour
             buttonManager.DisableButton(eGamestate.costOfChoiceE1, eGamestate.buttonE1, eGamestate.costOfChoiceE2, eGamestate.buttonE2);
 
             //3: updater Income for the day text & permanent income
-            endOfDayManager.UpdateIncomeForTheDay2(choiceD1Picked, costOfChoiceD1, costOfChoiceD2);
+            endOfDayManager.UpdateIncomeForTheDay2(choiceD1Picked, temporaryIncomeChangeD1, temporaryIncomeChangeD2);
             endOfDayManager.UpdateAverageDailyIncome2(choiceD1Picked, permanentIncomeChangeD1, permanentIncomeChangeD2);
 
             //4: fra factD til endOfTheDayScreen og tilføjer daily income til ens moneybar 

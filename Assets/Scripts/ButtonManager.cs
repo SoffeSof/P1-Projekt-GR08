@@ -10,7 +10,9 @@ public class ButtonManager : MonoBehaviour
     public EndOfDayManager endOfDayManager;
     public GameObject askANeighborButton;
     public I_GameState iGamestate;
+    public GameObject villageBackground;
     public J_GameState jGamestate;
+
 
 
     private float delayedTimeInSeconds = 5f;
@@ -19,6 +21,7 @@ public class ButtonManager : MonoBehaviour
     private Button currentButton2;
     private float currentCostOfChoice1;
     private float currentCostOfChoice2;
+    private float moneyAddedFromAANB = 5f;
 
     [Header("SceneController")]
     public SceneController1 sceneController;
@@ -28,6 +31,8 @@ public class ButtonManager : MonoBehaviour
     /// </summary>
     public void DisableButton(float costOfChoice1, Button button1, float costOfChoice2, Button button2)
     {
+        costOfChoice1 *= -1;
+        costOfChoice2 *= -1;
         if (barManager.moneyValueTotal < costOfChoice1)
         {
             button1.interactable = false;
@@ -71,9 +76,10 @@ public class ButtonManager : MonoBehaviour
     /// </summary>
     public void OnChoiceButtonClick(GameObject decision, GameObject consequence, GameObject continueButton)
     {
-            decision.SetActive(false);
-            consequence.SetActive(true);
-            continueButton.SetActive(true);
+        decision.SetActive(false);
+        villageBackground.SetActive(false);
+        consequence.SetActive(true);
+        continueButton.SetActive(true);
     }
 
     /// <summary>
@@ -94,6 +100,7 @@ public class ButtonManager : MonoBehaviour
     {
         fact.SetActive(false);
         continueButton.SetActive(false);
+        villageBackground.SetActive(true);
         nextDecision.SetActive(true);
     }
 
@@ -105,6 +112,7 @@ public class ButtonManager : MonoBehaviour
     {
         fact.SetActive(false);
         continueButton.SetActive(false);
+        villageBackground.SetActive(true);
 
         if (consequence1Picked)
         {
@@ -148,7 +156,7 @@ public class ButtonManager : MonoBehaviour
     
     public void DisableAskANeighborButton()
     {       
-        barManager.UpdateMoneyBar(100f);
+        barManager.UpdateMoneyBar(moneyAddedFromAANB);
         askANeighborButton.SetActive(false);
 
         if (jGamestate.decisionJ.activeInHierarchy)

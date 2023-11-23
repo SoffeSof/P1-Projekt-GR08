@@ -22,9 +22,9 @@ public class A_GameState : MonoBehaviour
     public bool choiceA2Picked;
 
     [Header("Choice 1")]
-    public float costOfChoiceA1 = -5f;
-    public float healthOfChoiceA1 = -5f;
-    public float moodOfChoiceA1 = -5f;
+    public float costOfChoiceA1;
+    public float healthOfChoiceA1;
+    public float moodOfChoiceA1;
     public float temporaryIncomeChangeA1;
     public float permanentIncomeChangeA1;
 
@@ -70,7 +70,7 @@ public class A_GameState : MonoBehaviour
             buttonManager.DisableButton(bGamestate.costOfChoiceB1, bGamestate.buttonB1, bGamestate.costOfChoiceB2, bGamestate.buttonB2);
 
             //3: updater Income for the day text & permanent income
-            endOfDayManager.UpdateIncomeForTheDay1(choiceA1Picked, costOfChoiceA1, costOfChoiceA2);
+            endOfDayManager.UpdateIncomeForTheDay1(choiceA1Picked, temporaryIncomeChangeA1, temporaryIncomeChangeA2);
             endOfDayManager.UpdateAverageDailyIncome1(choiceA1Picked, permanentIncomeChangeA1, permanentIncomeChangeA2);
 
             //4: fra factB til endOfTheDayScreen og tilføjer daily income til ens moneybar 

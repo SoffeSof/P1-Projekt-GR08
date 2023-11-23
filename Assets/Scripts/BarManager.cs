@@ -11,8 +11,7 @@ public class BarManager : MonoBehaviour
     public ButtonManager buttonManager;
     public Slider healthBarSlider;
     public Slider moodBarSlider;
-    public float moneyValueTotal;
-    //public Button choiceB1Button;
+    public float moneyValueTotal = 5;
     public TMP_Text moneyValueTotalText;
     public SceneController1 sceneController;
     

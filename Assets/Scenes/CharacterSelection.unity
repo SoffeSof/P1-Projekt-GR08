@@ -451,14 +451,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97dce38f2f631481db22674d09792955, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 540e073aab7d548daab1a2e01d353e22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -628,7 +628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &153324222
 RectTransform:
   m_ObjectHideFlags: 0
@@ -738,8 +738,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -327}
-  m_SizeDelta: {x: 561.47, y: 299.46}
+  m_AnchoredPosition: {x: 0, y: -285}
+  m_SizeDelta: {x: 850.88, y: 299.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170035696
 MonoBehaviour:
@@ -761,16 +761,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Dont do this
+  m_text: '1. Dont  run out of money
 
-    2. Do this
 
-    3. Bla bla
+    2. Dont run out of mood
 
-    4. bla bla bla
 
-    5.
-    bla bla bla'
+    3. Dont
+    run out of health
+
+
+    4. Consider your choices wisely
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22156145737f54667a7e7ba74401a239, type: 2}
   m_sharedMaterial: {fileID: 8449170692518541163, guid: 22156145737f54667a7e7ba74401a239, type: 2}
@@ -797,8 +800,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1285,7 +1288,7 @@ Transform:
   m_GameObject: {fileID: 290196490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.02, y: 0.62, z: 0.024540653}
+  m_LocalPosition: {x: 3.94, y: 0.44, z: 0.024540653}
   m_LocalScale: {x: 2.9859765, y: 2.9561167, z: 2.9859765}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1332,15 +1335,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 652c71c0316e6401faa1a8e9a97adf18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ec16590b95204c55b2cb2cd5fd4394b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 19.2}
+  m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &306835088
@@ -3340,7 +3343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1886301797
 MonoBehaviour:
   m_ObjectHideFlags: 0

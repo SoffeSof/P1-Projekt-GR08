@@ -61,7 +61,7 @@ public class J_GameState : MonoBehaviour
         choiceJ2Picked = true;
     }
 
-    public void ContinueButtonIClick()
+    public void ContinueButtonJClick()
     {
         if (impactJ1.activeInHierarchy || impactJ2.activeInHierarchy)
         {
