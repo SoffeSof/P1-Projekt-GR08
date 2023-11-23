@@ -11,8 +11,7 @@ public class EndOfDayManager : MonoBehaviour
 
     [SerializeField]
     private ButtonManager buttonManager;
-
-    [SerializeField] 
+ 
     public TMP_Text incomeForTheDayText;
     public TMP_Text AverageDailyIncomeText;
 
