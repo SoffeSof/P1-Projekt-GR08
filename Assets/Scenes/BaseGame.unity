@@ -590,14 +590,14 @@ MonoBehaviour:
   choiceI2Picked: 0
   buttonI1: {fileID: 866774138}
   buttonI2: {fileID: 1892951167}
-  costOfChoiceI1: 0
-  healthOfChoiceI1: 0
-  moodOfChoiceI1: 0
+  costOfChoiceI1: -20
+  healthOfChoiceI1: 1
+  moodOfChoiceI1: 3
   temporaryIncomeChangeI1: 0
-  permanentIncomeChangeI1: 0
+  permanentIncomeChangeI1: 2
   costOfChoiceI2: 0
   healthOfChoiceI2: 0
-  moodOfChoiceI2: 0
+  moodOfChoiceI2: -3
   temporaryIncomeChangeI2: 0
   permanentIncomeChangeI2: 0
 --- !u!1 &38811268
@@ -6758,13 +6758,13 @@ MonoBehaviour:
   buttonE1: {fileID: 709441387}
   buttonE2: {fileID: 909555125}
   costOfChoiceE1: 0
-  healthOfChoiceE1: 0
-  moodOfChoiceE1: 0
+  healthOfChoiceE1: 2
+  moodOfChoiceE1: 3
   temporaryIncomeChangeE1: 0
-  permanentIncomeChangeE1: 0
+  permanentIncomeChangeE1: -1
   costOfChoiceE2: 0
   healthOfChoiceE2: 0
-  moodOfChoiceE2: 0
+  moodOfChoiceE2: -2
   temporaryIncomeChangeE2: 0
   permanentIncomeChangeE2: 0
 --- !u!1 &423590211
@@ -7181,12 +7181,12 @@ MonoBehaviour:
   buttonH2: {fileID: 48053808}
   costOfChoiceH1: 0
   healthOfChoiceH1: 0
-  moodOfChoiceH1: 0
-  temporaryIncomeChangeH1: 0
+  moodOfChoiceH1: 2
+  temporaryIncomeChangeH1: -3
   permanentIncomeChangeH1: 0
   costOfChoiceH2: 0
   healthOfChoiceH2: 0
-  moodOfChoiceH2: 0
+  moodOfChoiceH2: -2
   temporaryIncomeChangeH2: 0
   permanentIncomeChangeH2: 0
 --- !u!1 &456701439
@@ -10018,15 +10018,15 @@ MonoBehaviour:
   choiceC2Picked: 0
   buttonC1: {fileID: 232316723}
   buttonC2: {fileID: 1216537782}
-  costOfChoiceC1: 0
+  costOfChoiceC1: -15
   healthOfChoiceC1: 0
-  moodOfChoiceC1: 0
-  temporaryIncomeChangeC1: 0
+  moodOfChoiceC1: -1
+  temporaryIncomeChangeC1: -3
   permanentIncomeChangeC1: 0
-  costOfChoiceC2: 0
+  costOfChoiceC2: -11
   healthOfChoiceC2: 0
-  moodOfChoiceC2: 0
-  temporaryIncomeChangeC2: 0
+  moodOfChoiceC2: 2
+  temporaryIncomeChangeC2: -0.5
   permanentIncomeChangeC2: 0
 --- !u!1 &672771593
 GameObject:
@@ -10727,16 +10727,16 @@ MonoBehaviour:
   continueButtonA: {fileID: 1039937823}
   choiceA1Picked: 0
   choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
+  costOfChoiceA1: 0
+  healthOfChoiceA1: -2
+  moodOfChoiceA1: -3
   temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
+  permanentIncomeChangeA1: 0
+  costOfChoiceA2: 0
+  healthOfChoiceA2: 0
+  moodOfChoiceA2: -1
   temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  permanentIncomeChangeA2: 0
 --- !u!1 &731872565
 GameObject:
   m_ObjectHideFlags: 0
@@ -23398,15 +23398,15 @@ MonoBehaviour:
   choiceD2Picked: 0
   buttonD1: {fileID: 786891556}
   buttonD2: {fileID: 1075434433}
-  costOfChoiceD1: 0
+  costOfChoiceD1: -11
   healthOfChoiceD1: 0
-  moodOfChoiceD1: 0
+  moodOfChoiceD1: 2
   temporaryIncomeChangeD1: 0
   permanentIncomeChangeD1: 0
-  costOfChoiceD2: 0
+  costOfChoiceD2: -15
   healthOfChoiceD2: 0
-  moodOfChoiceD2: 0
-  temporaryIncomeChangeD2: 0
+  moodOfChoiceD2: -1
+  temporaryIncomeChangeD2: -3
   permanentIncomeChangeD2: 0
 --- !u!1 &1532310619
 GameObject:
@@ -28837,14 +28837,14 @@ MonoBehaviour:
   choiceG2Picked: 0
   buttonG1: {fileID: 1554013964}
   buttonG2: {fileID: 1171736891}
-  costOfChoiceG1: 0
-  healthOfChoiceG1: 0
-  moodOfChoiceG1: 0
-  temporaryIncomeChangeG1: 0
+  costOfChoiceG1: -5
+  healthOfChoiceG1: 3
+  moodOfChoiceG1: 2
+  temporaryIncomeChangeG1: -0.5
   permanentIncomeChangeG1: 0
-  costOfChoiceG2: 0
+  costOfChoiceG2: -2
   healthOfChoiceG2: 0
-  moodOfChoiceG2: 0
+  moodOfChoiceG2: -1
   temporaryIncomeChangeg2: 0
   permanentIncomeChangeG2: 0
 --- !u!1 &1850694815
@@ -29402,14 +29402,14 @@ MonoBehaviour:
   choiceF2Picked: 0
   buttonF1: {fileID: 216789053}
   buttonF2: {fileID: 2093736590}
-  costOfChoiceF1: 0
-  healthOfChoiceF1: 0
-  moodOfChoiceF1: 0
-  temporaryIncomeChangeF1: 0
+  costOfChoiceF1: -4
+  healthOfChoiceF1: 3
+  moodOfChoiceF1: 2
+  temporaryIncomeChangeF1: -0.5
   permanentIncomeChangeF1: 0
-  costOfChoiceF2: 0
+  costOfChoiceF2: -1.5
   healthOfChoiceF2: 0
-  moodOfChoiceF2: 0
+  moodOfChoiceF2: -1
   temporaryIncomeChangeF2: 0
   permanentIncomeChangeF2: 0
 --- !u!1 &1879912842
@@ -30192,12 +30192,12 @@ MonoBehaviour:
   buttonJ2: {fileID: 1680929233}
   costOfChoiceJ1: 0
   healthOfChoiceJ1: 0
-  moodOfChoiceJ1: 0
+  moodOfChoiceJ1: -2
   temporaryIncomeChangeJ1: 0
   permanentIncomeChangeJ1: 0
   costOfChoiceJ2: 0
   healthOfChoiceJ2: 0
-  moodOfChoiceJ2: 0
+  moodOfChoiceJ2: -3
   temporaryIncomeChangeJ2: 0
   permanentIncomeChangeJ2: 0
   sceneController: {fileID: 0}
@@ -31417,14 +31417,14 @@ MonoBehaviour:
   choiceB2Picked: 0
   buttonB1: {fileID: 984051544}
   buttonB2: {fileID: 1684881208}
-  costOfChoiceB1: 0
-  healthOfChoiceB1: 0
-  moodOfChoiceB1: 0
-  temporaryIncomeChangeB1: 0
+  costOfChoiceB1: -5
+  healthOfChoiceB1: 3
+  moodOfChoiceB1: 2
+  temporaryIncomeChangeB1: -0.5
   permanentIncomeChangeB1: 0
-  costOfChoiceB2: 0
+  costOfChoiceB2: -2
   healthOfChoiceB2: 0
-  moodOfChoiceB2: 0
+  moodOfChoiceB2: -1
   temporaryIncomeChangeB2: 0
   permanentIncomeChangeB2: 0
 --- !u!1 &1985500429
