@@ -20,6 +20,11 @@ public class SceneController1 : MonoBehaviour
         StartCoroutine (LoadWinningScene());
     }
 
+    public void GetMainMenu()
+    {
+        StartCoroutine(LoadMainMenu());
+    }
+
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("End");
@@ -38,6 +43,17 @@ public class SceneController1 : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 2);
+
+        transitionAnim.SetTrigger("Start");
+    }
+
+    IEnumerator LoadMainMenu()
+    {
+        transitionAnim.SetTrigger("End");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadSceneAsync("Main Menu");
 
         transitionAnim.SetTrigger("Start");
     }
