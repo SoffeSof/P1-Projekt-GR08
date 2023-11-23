@@ -9,8 +9,10 @@ public class ButtonManager : MonoBehaviour
     public BarManager barManager;
     public EndOfDayManager endOfDayManager;
     public GameObject askANeighborButton;
-    
-    
+    public I_GameState iGamestate;
+    public J_GameState jGamestate;
+
+
     private float delayedTimeInSeconds = 5f;
 
     private Button currentButton1;
@@ -144,12 +146,17 @@ public class ButtonManager : MonoBehaviour
     /// If the player is on a decision, the DisableButton method will be run again using the current costs and buttons and the loosing conditions will be checked
     /// </summary>
     
-    public void DisableAskANeighborButton(GameObject decision)
+    public void DisableAskANeighborButton()
     {       
         barManager.UpdateMoneyBar(100f);
         askANeighborButton.SetActive(false);
 
-        if (decision.activeInHierarchy)
+        if (jGamestate.decisionJ.activeInHierarchy)
+        {
+            DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
+            CheckLoosingCondition(currentButton1, currentButton2);
+        }
+        if (iGamestate.decisionI.activeInHierarchy)
         {
             DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
             CheckLoosingCondition(currentButton1, currentButton2);

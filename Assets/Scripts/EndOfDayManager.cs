@@ -19,7 +19,7 @@ public class EndOfDayManager : MonoBehaviour
     private float incomeForTheDay;
 
     public GameObject endOfDayScreen;
-    public GameObject continueButtonEndScreen;
+    //public GameObject continueButtonEndScreen;
 
     ///<summary>
     ///Enables End Of Day Screen. If "fact" is active in hierarchy, it disables "fact" and enables end of day screen.

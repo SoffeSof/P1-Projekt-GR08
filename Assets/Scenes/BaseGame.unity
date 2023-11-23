@@ -475,8 +475,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 663630412}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: C_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonCClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -574,30 +574,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 22885403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: d25cbbc822c2049219bc7b858683d4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1963219109}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1894240041}
-  continueButtonA: {fileID: 2121919645}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  jGamestate: {fileID: 1928183018}
+  decisionI: {fileID: 1963219109}
+  impactI1: {fileID: 615791558}
+  impactI2: {fileID: 1585749486}
+  factI: {fileID: 1894240041}
+  continueButtonI: {fileID: 2121919645}
+  choiceI1Picked: 0
+  choiceI2Picked: 0
+  buttonI1: {fileID: 866774138}
+  buttonI2: {fileID: 1892951167}
+  costOfChoiceI1: 0
+  healthOfChoiceI1: 0
+  moodOfChoiceI1: 0
+  temporaryIncomeChangeI1: 0
+  permanentIncomeChangeI1: 0
+  costOfChoiceI2: 0
+  healthOfChoiceI2: 0
+  moodOfChoiceI2: 0
+  temporaryIncomeChangeI2: 0
+  permanentIncomeChangeI2: 0
 --- !u!1 &38811268
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,8 +875,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 454869031}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: H_GameState, Assembly-CSharp
+        m_MethodName: ButtonH2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2605,7 +2607,9 @@ MonoBehaviour:
   barManager: {fileID: 864712850}
   endOfDayManager: {fileID: 1807564322}
   askANeighborButton: {fileID: 1104867494}
-  sceneController: {fileID: 0}
+  iGamestate: {fileID: 0}
+  jGamestate: {fileID: 0}
+  sceneController: {fileID: 1559585296}
 --- !u!1 &155586573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,8 +3348,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1874677370}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: F_GameState, Assembly-CSharp
+        m_MethodName: ButtonF1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3613,8 +3617,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 663630412}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: C_GameState, Assembly-CSharp
+        m_MethodName: ButtonC1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5046,8 +5050,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1982942339}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: B_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonBClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6736,30 +6740,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 410171153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: c2de33a326ebe44ee942862b9c5e57bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1692131515}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1228938625}
-  continueButtonA: {fileID: 2018481887}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  fGamestate: {fileID: 1874677370}
+  gGamestate: {fileID: 1835915436}
+  decisionE: {fileID: 1692131515}
+  impactE1: {fileID: 889062560}
+  impactE2: {fileID: 2116488131}
+  factE: {fileID: 1228938625}
+  continueButtonE: {fileID: 2018481887}
+  choiceE1Picked: 0
+  choiceE2Picked: 0
+  buttonE1: {fileID: 709441387}
+  buttonE2: {fileID: 909555125}
+  costOfChoiceE1: 0
+  healthOfChoiceE1: 0
+  moodOfChoiceE1: 0
+  temporaryIncomeChangeE1: 0
+  permanentIncomeChangeE1: 0
+  costOfChoiceE2: 0
+  healthOfChoiceE2: 0
+  moodOfChoiceE2: 0
+  temporaryIncomeChangeE2: 0
+  permanentIncomeChangeE2: 0
 --- !u!1 &423590211
 GameObject:
   m_ObjectHideFlags: 0
@@ -7084,7 +7091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &454661509
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7156,30 +7163,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 454869029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: e641062a9ade04010b98a5a4ddc63396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1380281048}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1410624593}
-  continueButtonA: {fileID: 806102689}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  iGamestate: {fileID: 22885405}
+  decisionH: {fileID: 1380281048}
+  impactH1: {fileID: 1560230701}
+  impactH2: {fileID: 1206325351}
+  factH: {fileID: 1410624593}
+  continueButtonH: {fileID: 806102689}
+  choiceH1Picked: 0
+  choiceH2Picked: 0
+  buttonH1: {fileID: 1266706927}
+  buttonH2: {fileID: 48053808}
+  costOfChoiceH1: 0
+  healthOfChoiceH1: 0
+  moodOfChoiceH1: 0
+  temporaryIncomeChangeH1: 0
+  permanentIncomeChangeH1: 0
+  costOfChoiceH2: 0
+  healthOfChoiceH2: 0
+  moodOfChoiceH2: 0
+  temporaryIncomeChangeH2: 0
+  permanentIncomeChangeH2: 0
 --- !u!1 &456701439
 GameObject:
   m_ObjectHideFlags: 0
@@ -9322,8 +9331,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835915436}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: G_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonGClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9993,30 +10002,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 663630410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: bfaa589830be74851b613dcaa1ae9711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1188032410}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1973342715}
-  continueButtonA: {fileID: 22661205}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  eGamestate: {fileID: 410171155}
+  decisionC: {fileID: 1188032410}
+  impactC1: {fileID: 1285038395}
+  impactC2: {fileID: 1282285891}
+  factC: {fileID: 1973342715}
+  continueButtonC: {fileID: 22661205}
+  choiceC1Picked: 0
+  choiceC2Picked: 0
+  buttonC1: {fileID: 232316723}
+  buttonC2: {fileID: 1216537782}
+  costOfChoiceC1: 0
+  healthOfChoiceC1: 0
+  moodOfChoiceC1: 0
+  temporaryIncomeChangeC1: 0
+  permanentIncomeChangeC1: 0
+  costOfChoiceC2: 0
+  healthOfChoiceC2: 0
+  moodOfChoiceC2: 0
+  temporaryIncomeChangeC2: 0
+  permanentIncomeChangeC2: 0
 --- !u!1 &672771593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10603,8 +10614,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 410171155}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: E_GameState, Assembly-CSharp
+        m_MethodName: ButtonE1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10708,10 +10719,10 @@ MonoBehaviour:
   buttonManager: {fileID: 144451390}
   endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
+  bGamestate: {fileID: 1982942339}
   decisionA: {fileID: 454661508}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
+  impactA1: {fileID: 293953732}
+  impactA2: {fileID: 1010449272}
   factA: {fileID: 595760747}
   continueButtonA: {fileID: 1039937823}
   choiceA1Picked: 0
@@ -11861,8 +11872,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1518964852}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: D_GameState, Assembly-CSharp
+        m_MethodName: ButtonD1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12649,8 +12660,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 454869031}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: H_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonHClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13303,7 +13314,6 @@ MonoBehaviour:
   healthBarSlider: {fileID: 1082007347}
   moodBarSlider: {fileID: 836414246}
   moneyValueTotal: 7
-  choiceB1Button: {fileID: 0}
   moneyValueTotalText: {fileID: 1136676440}
   sceneController: {fileID: 1559585296}
   smiley1: {fileID: 309132315}
@@ -13394,8 +13404,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22885405}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: I_GameState, Assembly-CSharp
+        m_MethodName: ButtonI1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13635,11 +13645,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hawa chose to fetch water from their local, which saved her a great amount
-    of time and she was able to sell the fish her husband brought home that day,
-    maintaining their daily income. However, as the evening progressed, the contaminated
-    water caused her son, Joseph, to feel ill. Knowing Joseph might get sick due
-    to the contaminated water caused Hawa considerable anxiety and sadness.
+  m_text: Hawa chose to invest extra time to fetch clean water. Although the water
+    was clean, risking no illness among the family, Hawa did not have time to sell
+    fish at the market. Instead, Hawa sent her daughter Patience to the market alone,
+    resulting in a losing half of their daily income. The loss of income placed an
+    economic strain on their family and could possibly comprise their immediate needs
+    such as food, which caused Hawa to feel stressed.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22156145737f54667a7e7ba74401a239, type: 2}
   m_sharedMaterial: {fileID: 8449170692518541163, guid: 22156145737f54667a7e7ba74401a239, type: 2}
@@ -14521,8 +14532,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 410171155}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: E_GameState, Assembly-CSharp
+        m_MethodName: ButtonE2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15804,8 +15815,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1982942339}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: B_GameState, Assembly-CSharp
+        m_MethodName: ButtonB1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17616,8 +17627,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1518964852}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: D_GameState, Assembly-CSharp
+        m_MethodName: ButtonD2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18289,7 +18300,6 @@ GameObject:
   - component: {fileID: 1104867498}
   - component: {fileID: 1104867497}
   - component: {fileID: 1104867496}
-  - component: {fileID: 1104867499}
   m_Layer: 7
   m_Name: AskANeighbor
   m_TagString: Untagged
@@ -18314,7 +18324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -741, y: 134}
+  m_AnchoredPosition: {x: -688, y: 448}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104867496
@@ -18336,7 +18346,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -18346,7 +18356,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 2021036387337617091, guid: 634694239f0c142a188948887eccda47, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -18361,9 +18371,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: I_GameState, Assembly-CSharp
-        m_MethodName: DisableAANBI
+      - m_Target: {fileID: 144451390}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: EnableAskANeighborButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18393,8 +18403,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1819381919357873697, guid: 634694239f0c142a188948887eccda47, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -18411,41 +18421,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104867494}
   m_CullTransparentMesh: 1
---- !u!114 &1104867499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104867494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d25cbbc822c2049219bc7b858683d4e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonManager: {fileID: 0}
-  barManager: {fileID: 0}
-  endOfDayManager: {fileID: 0}
-  jGamestate: {fileID: 0}
-  decisionI: {fileID: 0}
-  impactI1: {fileID: 0}
-  impactI2: {fileID: 0}
-  factI: {fileID: 0}
-  continueButtonI: {fileID: 0}
-  choiceI1Picked: 0
-  choiceI2Picked: 0
-  buttonI1: {fileID: 0}
-  buttonI2: {fileID: 0}
-  costOfChoiceI1: 0
-  healthOfChoiceI1: 0
-  moodOfChoiceI1: 0
-  temporaryIncomeChangeI1: 0
-  permanentIncomeChangeI1: 0
-  costOfChoiceI2: 0
-  healthOfChoiceI2: 0
-  moodOfChoiceI2: 0
-  temporaryIncomeChangeI2: 0
-  permanentIncomeChangeI2: 0
 --- !u!1 &1110210353
 GameObject:
   m_ObjectHideFlags: 0
@@ -19361,7 +19336,7 @@ GameObject:
   - component: {fileID: 1171736892}
   - component: {fileID: 1171736891}
   m_Layer: 7
-  m_Name: ChoiceE2
+  m_Name: ChoiceG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19432,8 +19407,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835915436}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: G_GameState, Assembly-CSharp
+        m_MethodName: ButtonG2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19951,7 +19926,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202605599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20101,8 +20076,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1874677370}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: F_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonFClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20485,8 +20460,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 663630412}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: C_GameState, Assembly-CSharp
+        m_MethodName: ButtonC2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21427,8 +21402,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 454869031}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: H_GameState, Assembly-CSharp
+        m_MethodName: ButtonH1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21889,11 +21864,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hawa chose to fetch water from their local, which saved her a great amount
-    of time and she was able to sell the fish her husband brought home that day,
-    maintaining their daily income. However, as the evening progressed, the contaminated
-    water caused her son, Joseph, to feel ill. Knowing Joseph might get sick due
-    to the contaminated water caused Hawa considerable anxiety and sadness.
+  m_text: Hawa chose to fetch water from their local well, which saved her a great
+    amount of time and she was able to sell the fish her husband brought home that
+    day, maintaining their daily income. However, as the evening progressed, the
+    contaminated water caused her son, Joseph, to feel ill. Knowing Joseph might
+    get sick due to the contaminated water caused Hawa considerable anxiety and sadness.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22156145737f54667a7e7ba74401a239, type: 2}
   m_sharedMaterial: {fileID: 8449170692518541163, guid: 22156145737f54667a7e7ba74401a239, type: 2}
@@ -21956,7 +21931,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 40.080566, w: 16.639069}
+  m_margin: {x: 0, y: 0, z: -4.7912908, w: 16.639069}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22054,8 +22029,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1518964852}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: D_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonDClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23407,30 +23382,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1518964850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: 874ca97c17bd441d299e6a3c48fc1298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1403948432}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1056716502}
-  continueButtonA: {fileID: 1314414517}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  eGamestate: {fileID: 410171155}
+  decisionD: {fileID: 1403948432}
+  impactD1: {fileID: 1551741027}
+  impactD2: {fileID: 252065446}
+  factD: {fileID: 1056716502}
+  continueButtonD: {fileID: 1314414517}
+  choiceD1Picked: 0
+  choiceD2Picked: 0
+  buttonD1: {fileID: 786891556}
+  buttonD2: {fileID: 1075434433}
+  costOfChoiceD1: 0
+  healthOfChoiceD1: 0
+  moodOfChoiceD1: 0
+  temporaryIncomeChangeD1: 0
+  permanentIncomeChangeD1: 0
+  costOfChoiceD2: 0
+  healthOfChoiceD2: 0
+  moodOfChoiceD2: 0
+  temporaryIncomeChangeD2: 0
+  permanentIncomeChangeD2: 0
 --- !u!1 &1532310619
 GameObject:
   m_ObjectHideFlags: 0
@@ -24068,7 +24045,7 @@ GameObject:
   - component: {fileID: 1554013965}
   - component: {fileID: 1554013964}
   m_Layer: 7
-  m_Name: ChoiceE1
+  m_Name: ChoiceG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24139,8 +24116,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1835915436}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: G_GameState, Assembly-CSharp
+        m_MethodName: ButtonG1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24362,7 +24339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7275439367720173775, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.4091177
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 7275439367720173775, guid: 10ecd0c65f52fdc45b2de22c86f67cad, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25280,7 +25257,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1639171590
 RectTransform:
@@ -25713,8 +25690,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1928183018}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA1Click
+        m_TargetAssemblyTypeName: J_GameState, Assembly-CSharp
+        m_MethodName: ButtonJ1Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25846,8 +25823,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1928183018}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: J_GameState, Assembly-CSharp
+        m_MethodName: ButtonJ2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25979,8 +25956,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1982942339}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: B_GameState, Assembly-CSharp
+        m_MethodName: ButtonB2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26859,7 +26836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -4.4}
+  m_AnchoredPosition: {x: 0, y: -4.3999996}
   m_SizeDelta: {x: -15.1, y: -24.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757490594
@@ -28153,7 +28130,7 @@ GameObject:
   - component: {fileID: 1807564321}
   - component: {fileID: 1807564322}
   m_Layer: 5
-  m_Name: EndOfTheDayScreen
+  m_Name: EndOfTheDayManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28198,7 +28175,6 @@ MonoBehaviour:
   incomeForTheDayText: {fileID: 456701441}
   AverageDailyIncomeText: {fileID: 731872567}
   endOfDayScreen: {fileID: 1807564320}
-  continueButtonEndScreen: {fileID: 0}
 --- !u!1 &1814042420
 GameObject:
   m_ObjectHideFlags: 0
@@ -28845,30 +28821,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835915434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f2e4f3359f64553a99b0af89408176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1814042420}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1998673366}
-  continueButtonA: {fileID: 579651840}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  hGamestate: {fileID: 454869031}
+  decisionG: {fileID: 1814042420}
+  impactG1: {fileID: 1534209911}
+  impactG2: {fileID: 1053012432}
+  factG: {fileID: 1998673366}
+  continueButtonG: {fileID: 579651840}
+  choiceG1Picked: 0
+  choiceG2Picked: 0
+  buttonG1: {fileID: 1554013964}
+  buttonG2: {fileID: 1171736891}
+  costOfChoiceG1: 0
+  healthOfChoiceG1: 0
+  moodOfChoiceG1: 0
+  temporaryIncomeChangeG1: 0
+  permanentIncomeChangeG1: 0
+  costOfChoiceG2: 0
+  healthOfChoiceG2: 0
+  moodOfChoiceG2: 0
+  temporaryIncomeChangeg2: 0
+  permanentIncomeChangeG2: 0
 --- !u!1 &1850694815
 GameObject:
   m_ObjectHideFlags: 0
@@ -29407,30 +29385,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1874677368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: c6f1c444595a547999a9d853d6b9601d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 681960581}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 1534127837}
-  continueButtonA: {fileID: 1202820595}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  eGamestate: {fileID: 410171155}
+  hGamestate: {fileID: 454869031}
+  decisionF: {fileID: 681960581}
+  impactF1: {fileID: 1978325656}
+  impactF2: {fileID: 1098870412}
+  factF: {fileID: 1534127837}
+  continueButtonF: {fileID: 1202820595}
+  choiceF1Picked: 0
+  choiceF2Picked: 0
+  buttonF1: {fileID: 216789053}
+  buttonF2: {fileID: 2093736590}
+  costOfChoiceF1: 0
+  healthOfChoiceF1: 0
+  moodOfChoiceF1: 0
+  temporaryIncomeChangeF1: 0
+  permanentIncomeChangeF1: 0
+  costOfChoiceF2: 0
+  healthOfChoiceF2: 0
+  moodOfChoiceF2: 0
+  temporaryIncomeChangeF2: 0
+  permanentIncomeChangeF2: 0
 --- !u!1 &1879912842
 GameObject:
   m_ObjectHideFlags: 0
@@ -29923,8 +29904,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22885405}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: I_GameState, Assembly-CSharp
+        m_MethodName: ButtonI2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30194,30 +30175,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928183016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: f31f7e702cfa74eefacd659cf595f631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 1449962138}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 203591218}
-  continueButtonA: {fileID: 1966583466}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  decisionJ: {fileID: 1449962138}
+  impactJ1: {fileID: 672771593}
+  impactJ2: {fileID: 1365613723}
+  factJ: {fileID: 203591218}
+  continueButtonJ: {fileID: 1966583466}
+  choiceJ1Picked: 0
+  choiceJ2Picked: 0
+  buttonJ1: {fileID: 1678590589}
+  buttonJ2: {fileID: 1680929233}
+  costOfChoiceJ1: 0
+  healthOfChoiceJ1: 0
+  moodOfChoiceJ1: 0
+  temporaryIncomeChangeJ1: 0
+  permanentIncomeChangeJ1: 0
+  costOfChoiceJ2: 0
+  healthOfChoiceJ2: 0
+  moodOfChoiceJ2: 0
+  temporaryIncomeChangeJ2: 0
+  permanentIncomeChangeJ2: 0
+  sceneController: {fileID: 0}
 --- !u!1 &1929558740
 GameObject:
   m_ObjectHideFlags: 0
@@ -31020,7 +31003,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1928183018}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
         m_MethodName: ContinueButtonAClick
         m_Mode: 1
@@ -31416,30 +31399,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 1982942337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd84c731776242e096f4b1a7f2d538b, type: 3}
+  m_Script: {fileID: 11500000, guid: d608f773e899f4403ad15a69f274bebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
-  endOfDayManager: {fileID: 1807564322}
   barManager: {fileID: 864712850}
-  bGamestate: {fileID: 0}
-  decisionA: {fileID: 396892078}
-  impactA1: {fileID: 0}
-  impactA2: {fileID: 0}
-  factA: {fileID: 512813374}
-  continueButtonA: {fileID: 321788167}
-  choiceA1Picked: 0
-  choiceA2Picked: 0
-  costOfChoiceA1: -5
-  healthOfChoiceA1: -5
-  moodOfChoiceA1: -5
-  temporaryIncomeChangeA1: 0
-  permanentIncomeChangeA1: -2
-  costOfChoiceA2: 3
-  healthOfChoiceA2: 3
-  moodOfChoiceA2: 3
-  temporaryIncomeChangeA2: 0
-  permanentIncomeChangeA2: -1
+  endOfDayManager: {fileID: 1807564322}
+  aGamestate: {fileID: 714809414}
+  cGamestate: {fileID: 663630412}
+  dGamestate: {fileID: 1518964852}
+  decisionB: {fileID: 396892078}
+  impactB1: {fileID: 2039881557}
+  impactB2: {fileID: 947360078}
+  factB: {fileID: 512813374}
+  continueButtonB: {fileID: 321788167}
+  choiceB1Picked: 0
+  choiceB2Picked: 0
+  buttonB1: {fileID: 984051544}
+  buttonB2: {fileID: 1684881208}
+  costOfChoiceB1: 0
+  healthOfChoiceB1: 0
+  moodOfChoiceB1: 0
+  temporaryIncomeChangeB1: 0
+  permanentIncomeChangeB1: 0
+  costOfChoiceB2: 0
+  healthOfChoiceB2: 0
+  moodOfChoiceB2: 0
+  temporaryIncomeChangeB2: 0
+  permanentIncomeChangeB2: 0
 --- !u!1 &1985500429
 GameObject:
   m_ObjectHideFlags: 0
@@ -32057,8 +32044,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 410171155}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: E_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonEClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33747,8 +33734,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1874677370}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ButtonA2Click
+        m_TargetAssemblyTypeName: F_GameState, Assembly-CSharp
+        m_MethodName: ButtonF2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34523,8 +34510,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22885405}
-        m_TargetAssemblyTypeName: A_GameState, Assembly-CSharp
-        m_MethodName: ContinueButtonAClick
+        m_TargetAssemblyTypeName: I_GameState, Assembly-CSharp
+        m_MethodName: ContinueButtonIClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34713,6 +34700,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1559585295}
   - {fileID: 1639171590}
   - {fileID: 1095748114}
-  - {fileID: 1559585295}

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public BarManager barManager;
+
     public void OnTryAgainClick()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);

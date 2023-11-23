@@ -43,7 +43,7 @@ public class J_GameState : MonoBehaviour
     [Header("SceneController")]
     public SceneController1 sceneController;
 
-    public void ButtonI1Click()
+    public void ButtonJ1Click()
     {
         buttonManager.OnChoiceButtonClick(decisionJ, impactJ1, continueButtonJ);
         barManager.UpdateHealthBar(healthOfChoiceJ1);
@@ -52,7 +52,7 @@ public class J_GameState : MonoBehaviour
         choiceJ1Picked = true;
     }
 
-    public void ButtonI2Click()
+    public void ButtonJ2Click()
     {
         buttonManager.OnChoiceButtonClick(decisionJ, impactJ2, continueButtonJ);
         barManager.UpdateHealthBar(healthOfChoiceJ2);
@@ -71,12 +71,15 @@ public class J_GameState : MonoBehaviour
 
         else if (factJ.activeInHierarchy)
         {
+            sceneController.PlayWinningScene();
+            /*
             //3: update daily income text og permanent income
             endOfDayManager.UpdateIncomeForTheDay1(choiceJ1Picked, costOfChoiceJ1, costOfChoiceJ2);
             endOfDayManager.UpdateAverageDailyIncome1(choiceJ1Picked, permanentIncomeChangeJ1, permanentIncomeChangeJ2);
 
             //3: fra factB til endOfTheDayScreen og tilføjer daily income til ens moneybar
             endOfDayManager.EnableEndOfDayScreen(factJ);
+            */
         }
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
@@ -86,12 +89,13 @@ public class J_GameState : MonoBehaviour
             sceneController.PlayWinningScene();
         }
     }
-
-    public void DisableAANBI()
+    /*
+    public void DisableAANBJ()
     {
         // disabler ask a neighbor button, tiløfjer x antal penge og tjekker loosinjg conditions, hvis man er inde i decisionI
         buttonManager.DisableAskANeighborButton(decisionJ);
     }
+    */
     // Start is called before the first frame update
     void Start()
     {

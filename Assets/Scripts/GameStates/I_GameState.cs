@@ -88,7 +88,13 @@ public class I_GameState : MonoBehaviour
             buttonManager.CheckLoosingCondition(jGamestate.buttonJ1, jGamestate.buttonJ2);
         }
     }
-
+    /*
+    public void DisableAANBI()
+    {
+        // disabler ask a neighbor button, tiløfjer x antal penge og tjekker loosinjg conditions, hvis man er inde i decisionI
+        buttonManager.DisableAskANeighborButton(decisionI);
+    }
+    */
     // Start is called before the first frame update
     void Start()
     {
