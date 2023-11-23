@@ -857,10 +857,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852485066}
-  - component: {fileID: 852485068}
   - component: {fileID: 852485069}
+  - component: {fileID: 852485068}
   m_Layer: 5
-  m_Name: Music
+  m_Name: MainMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -993,6 +993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38115a85e1e148a79fac5c306291d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAudioSource: {fileID: 852485068}
 --- !u!1 &1159346679
 GameObject:
   m_ObjectHideFlags: 0
