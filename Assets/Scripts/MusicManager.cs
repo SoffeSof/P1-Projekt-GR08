@@ -22,7 +22,7 @@ public class MusicManager : MonoBehaviour
     
     void StopMusic()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             myAudioSource.Stop();
         }
