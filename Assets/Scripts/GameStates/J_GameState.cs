@@ -72,30 +72,9 @@ public class J_GameState : MonoBehaviour
         else if (factJ.activeInHierarchy)
         {
             sceneController.PlayWinningScene();
-            /*
-            //3: update daily income text og permanent income
-            endOfDayManager.UpdateIncomeForTheDay1(choiceJ1Picked, costOfChoiceJ1, costOfChoiceJ2);
-            endOfDayManager.UpdateAverageDailyIncome1(choiceJ1Picked, permanentIncomeChangeJ1, permanentIncomeChangeJ2);
-
-            //3: fra factB til endOfTheDayScreen og tilføjer daily income til ens moneybar
-            endOfDayManager.EnableEndOfDayScreen(factJ);
-            */
-        }
-        else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
-        {
-            //4: Loads winning screen
-            // GAMMLE KODE: SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-
-            sceneController.PlayWinningScene();
         }
     }
-    /*
-    public void DisableAANBJ()
-    {
-        // disabler ask a neighbor button, tiløfjer x antal penge og tjekker loosinjg conditions, hvis man er inde i decisionI
-        buttonManager.DisableAskANeighborButton(decisionJ);
-    }
-    */
+   
     // Start is called before the first frame update
     void Start()
     {
