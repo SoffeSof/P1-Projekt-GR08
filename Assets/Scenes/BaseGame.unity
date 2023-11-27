@@ -3456,7 +3456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &203591219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32076,7 +32076,7 @@ MonoBehaviour:
   moodOfChoiceJ2: -3
   temporaryIncomeChangeJ2: 0
   permanentIncomeChangeJ2: 0
-  sceneController: {fileID: 0}
+  sceneController: {fileID: 1559585296}
 --- !u!1 &1929558740
 GameObject:
   m_ObjectHideFlags: 0
