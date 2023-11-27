@@ -29,6 +29,8 @@ public class ButtonManager : MonoBehaviour
     /// <summary>
     /// Disables (makes buttons non-interactable) if the costOfChoice is higher than the ammount of money the player has.
     /// </summary>
+    /// 
+
     public void DisableButton(float costOfChoice1, Button button1, float costOfChoice2, Button button2)
     {
         costOfChoice1 *= -1;

@@ -12,6 +12,7 @@ public class B_GameState : MonoBehaviour
     public A_GameState aGamestate;
     public C_GameState cGamestate;
     public D_GameState dGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionB;
@@ -103,20 +104,9 @@ public class B_GameState : MonoBehaviour
                 //6: tjek om loosing conditions bliver mødt (om ingen knapper er interactable og askANeighborg er inaktiv)
                 buttonManager.CheckLoosingCondition(dGamestate.buttonD1, dGamestate.buttonD2);
             }
+
+            DayToDayController.NextDay();
         }
     }
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -11,6 +11,7 @@ public class F_GameState : MonoBehaviour
     public EndOfDayManager endOfDayManager;
     public E_GameState eGamestate;
     public H_GameState hGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionF;
@@ -81,6 +82,8 @@ public class F_GameState : MonoBehaviour
 
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
+            DayToDayController.NextDay();
+
             //5: fra endOfTheDayScreen til decision c eller d
             endOfDayManager.DisableEndOfDayScreen(choiceF1Picked, hGamestate.decisionH, hGamestate.decisionH, continueButtonF);
 
@@ -90,18 +93,5 @@ public class F_GameState : MonoBehaviour
             //7: updates currentButtons and choices
             buttonManager.UpdateCurrentButtons(hGamestate.buttonH1, hGamestate.buttonH2, hGamestate.costOfChoiceH1, hGamestate.costOfChoiceH2);
         }
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

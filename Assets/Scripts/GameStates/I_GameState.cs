@@ -11,6 +11,7 @@ public class I_GameState : MonoBehaviour
     public BarManager barManager;
     public EndOfDayManager endOfDayManager;
     public J_GameState jGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionI;
@@ -81,6 +82,8 @@ public class I_GameState : MonoBehaviour
 
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
+            DayToDayController.NextDay();
+
             //5: fra endOfTheDayScreen til decision c eller d
             endOfDayManager.DisableEndOfDayScreen(choiceI1Picked, jGamestate.decisionJ, jGamestate.decisionJ, continueButtonI);
 
@@ -88,6 +91,7 @@ public class I_GameState : MonoBehaviour
             buttonManager.CheckLoosingCondition(jGamestate.buttonJ1, jGamestate.buttonJ2);
         }
     }
+}
     /*
     public void DisableAANBI()
     {
@@ -95,15 +99,4 @@ public class I_GameState : MonoBehaviour
         buttonManager.DisableAskANeighborButton(decisionI);
     }
     */
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

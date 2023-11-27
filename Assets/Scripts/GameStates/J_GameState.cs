@@ -10,6 +10,7 @@ public class J_GameState : MonoBehaviour
     public ButtonManager buttonManager;
     public BarManager barManager;
     public EndOfDayManager endOfDayManager;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionJ;
@@ -73,17 +74,5 @@ public class J_GameState : MonoBehaviour
         {
             sceneController.PlayWinningScene();
         }
-    }
-   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

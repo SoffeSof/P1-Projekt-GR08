@@ -9,6 +9,7 @@ public class A_GameState : MonoBehaviour
     public EndOfDayManager endOfDayManager;
     public BarManager barManager;
     public B_GameState bGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionA;
@@ -35,6 +36,10 @@ public class A_GameState : MonoBehaviour
     public float temporaryIncomeChangeA2;
     public float permanentIncomeChangeA2;
 
+    private void Start()
+    {
+        DayToDayController.NextDay();
+    }
     public void ButtonA1Click()
     {
         buttonManager.OnChoiceButtonClick(decisionA, impactA1, continueButtonA);
@@ -79,6 +84,8 @@ public class A_GameState : MonoBehaviour
 
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
+            DayToDayController.NextDay();
+
             //5: fra endOfTheDayScreen til decision c eller d
             endOfDayManager.DisableEndOfDayScreen(choiceA1Picked, bGamestate.decisionB, bGamestate.decisionB, continueButtonA);
 
@@ -87,14 +94,4 @@ public class A_GameState : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

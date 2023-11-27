@@ -10,6 +10,7 @@ public class D_GameState : MonoBehaviour
     public BarManager barManager;
     public EndOfDayManager endOfDayManager;
     public E_GameState eGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionD;
@@ -82,23 +83,13 @@ public class D_GameState : MonoBehaviour
 
         else if (endOfDayManager.endOfDayScreen.activeInHierarchy)
         {
+            DayToDayController.NextDay();
+
             //5: fra endOfTheDayScreen til decision c eller d
             endOfDayManager.DisableEndOfDayScreen(choiceD1Picked, eGamestate.decisionE, eGamestate.decisionE, continueButtonD);
 
             //6: tjek om loosing conditions bliver mødt (om ingen knapper er interactable og askANeighborg er inaktiv)
             buttonManager.CheckLoosingCondition(eGamestate.buttonE1, eGamestate.buttonE2);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

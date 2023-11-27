@@ -11,6 +11,7 @@ public class E_GameState : MonoBehaviour
     public EndOfDayManager endOfDayManager;
     public F_GameState fGamestate;
     public G_GameState gGamestate;
+    public DayToDay DayToDayController;
 
     [Header("Game Objects")]
     public GameObject decisionE;
@@ -83,7 +84,7 @@ public class E_GameState : MonoBehaviour
                 //4: knapper, der ikke er råd til ved decisionG skal gøres non-interactable
                 buttonManager.DisableButton(gGamestate.costOfChoiceG1, gGamestate.buttonG1, gGamestate.costOfChoiceG2, gGamestate.buttonG2);
             }
-
+            DayToDayController.NextDay();
             //5: Enables enten decision F eller G
             buttonManager.EnableNextDecision1or2(factE, choiceE1Picked, fGamestate.decisionF, gGamestate.decisionG, continueButtonE);
 
@@ -98,18 +99,5 @@ public class E_GameState : MonoBehaviour
             }
         }
     }
-
-    // Start is called before the first frame update
-        void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }
 
