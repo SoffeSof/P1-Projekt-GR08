@@ -1208,13 +1208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f859dead156844ef869e641860044e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextAText: {fileID: 0}
-  choiceA1Text: {fileID: 0}
-  choiceA2Text: {fileID: 0}
-  consequensA1Text: {fileID: 0}
-  consequensA2Text: {fileID: 0}
-  factsAText: {fileID: 0}
-  isLanguageEnglish: 1
 --- !u!1 &965711117
 GameObject:
   m_ObjectHideFlags: 0

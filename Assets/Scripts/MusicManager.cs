@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class MusicManager : MonoBehaviour
 {
     public AudioSource myAudioSource;
-
+    
     // Method to keep music active through scenes
     
     void Awake()
@@ -33,16 +33,20 @@ public class MusicManager : MonoBehaviour
     }
 
     
+    
+    // ReSharper disable Unity.PerformanceAnalysis
+    
     /*
     void RestartMainMusic()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3 && myAudioSource != myAudioSource.isPlaying);
+        
+        if (SceneManager.GetActiveScene().buildIndex == 1);
         {
-          myAudioSource.Play();
+            myAudioSource.Play();
         }
         
-    }
-    */
+    }*/
+    
     
     private void Update()
     {
