@@ -17,6 +17,8 @@ public class BarManager : MonoBehaviour
     
     [SerializeField]
     private GameObject smiley1, smiley2, smiley3, smiley4;
+    [SerializeField]
+    public GameObject character, characterSad;
 
     /// <summary>
     /// Deactivates all smileys 
@@ -27,6 +29,12 @@ public class BarManager : MonoBehaviour
         smiley2.SetActive(false);
         smiley3.SetActive(false);
         smiley4.SetActive(false);
+    }
+
+    private void SetCharactersFalse()
+    {
+        character.SetActive(false);
+        characterSad.SetActive(false);
     }
 
     /// <summary>
@@ -81,24 +89,34 @@ public class BarManager : MonoBehaviour
         {
             SetSmileysFalse();
             smiley1.SetActive(true);
+            
+            
 
         }
         else if (moodBarSlider.value < 7.5 && moodBarSlider.value >= 5)
         {
             SetSmileysFalse();
             smiley2.SetActive(true);
+            
+            SetCharactersFalse();
+            character.SetActive(true);
 
         }
         else if (moodBarSlider.value < 5 && moodBarSlider.value >= 2.5)
         {
             SetSmileysFalse();
             smiley3.SetActive(true);
+            
+            SetCharactersFalse();
+            characterSad.SetActive(true);
 
         }
         else if (moodBarSlider.value < 2.5 && moodBarSlider.value > 0)
         {
             SetSmileysFalse();
             smiley4.SetActive(true);
+            
+           
 
         }
         else if (moodBarSlider.value <= 0)
