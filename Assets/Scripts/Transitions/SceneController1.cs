@@ -35,6 +35,7 @@ public class SceneController1 : MonoBehaviour
 
         transitionAnim.SetTrigger("Start");
     }
+    
 
     IEnumerator LoadWinningScene()
     {
@@ -57,4 +58,20 @@ public class SceneController1 : MonoBehaviour
 
         transitionAnim.SetTrigger("Start");
     }
+
+    //NEDENST�ENDE KODE, SKAL BRUGES AF HVEM END DER FOR AT OPTIMERE DETTE SCRIPT TIL OPGAVE TIL IKDU
+    //JEG HAR LAVET DET NU, FORDI JEG SKAL BRUGE SK�RMBILLEDE TIL RAPPORT
+    //SP�RG MIG (FREDERIK), HVIS DER ER SP�RGSM�L TIL HVAD DER SKAL G�RES HELT KONKRET.
+    /*
+    IEnumerator LoadScene(int sceneIndex)
+    {
+        transitionAnim.SetTrigger("End");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadSceneAsync(sceneIndex);
+
+        transitionAnim.SetTrigger("Start");
+    }
+    */
 }
