@@ -9,19 +9,19 @@ using UnityEngine.SceneManagement;
 public class BarManager : MonoBehaviour
 {
     public ButtonManager buttonManager;
+    public SceneController1 sceneController;
     public Slider healthBarSlider;
     public Slider moodBarSlider;
     public float moneyValueTotal = 5;
     public TMP_Text moneyValueTotalText;
-    public SceneController1 sceneController;
     
     [SerializeField]
     private GameObject smiley1, smiley2, smiley3, smiley4;
     [SerializeField]
-    public GameObject character, characterSad;
+    private GameObject character, characterSad;
 
     /// <summary>
-    /// Deactivates all smileys 
+    /// Deactivates all smiley and character sprites
     /// </summary>
     private void SetSmileysFalse()
     {

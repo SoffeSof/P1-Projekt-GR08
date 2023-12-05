@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelectionManager : MonoBehaviour
 {
+    // rules variable NotUsed
     [SerializeField]
     private GameObject characterHawa, characterCarl, rules, characterSelection;
     [SerializeField]
@@ -41,12 +42,14 @@ public class CharacterSelectionManager : MonoBehaviour
         }
     }
 
+    // NotUsed
     public void LoadRules()
     {
         characterSelection.SetActive(false);
         rules.SetActive(true);
     }
 
+    // NotUsed
     public void LoadGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
