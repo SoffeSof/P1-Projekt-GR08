@@ -2725,12 +2725,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Hawa Kamara (25) lives with her husband Emmanuel (34), and their three
-    children: Patience (10), Joseph (8) and Marie (6). \nHawa and her family live
+    children: Patience (10), Joseph (8), and Marie (6). \r\nHawa and her family live
     in a rural area in Liberia, in a very small house with no access to running water,
-    sanitation facilities or electricity. \nThey have a small piece of land near
-    their home, where they grow crops such as cassava, rice and other vegetables.
-    This is their primary source of income and food for the family. \nThey aspire
-    to send all three children to school but struggle due to expenses. \n\n"
+    sanitation facilities, or electricity. \r\nThey have a small boat which Emanuel
+    uses in the sea to go fishing. This is their primary source of income and food
+    for their family. \r\nThey aspire to send all three children to school but struggle
+    due to expenses.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22156145737f54667a7e7ba74401a239, type: 2}
   m_sharedMaterial: {fileID: 8449170692518541163, guid: 22156145737f54667a7e7ba74401a239, type: 2}
