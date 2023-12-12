@@ -40,13 +40,13 @@ public class BarManager : MonoBehaviour
     /// <summary>
     /// uses the SceneManager.GetActiveScene to load the Scene +1, which is the GameOverScreen in the buildIndex
     /// </summary>
-    public void LoadGameOverScreen()
+    /*public void LoadGameOverScreen()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         //Calls the method from the Scene Controller1 script, in order to get a Coroutine and play our animations
         sceneController.NextScene();
-    }
+    }*/
 
     /// <summary>
     /// Updates the MoneyBar by added the parameter moneyValue to the moneyValue total and overriding this variable and then converting this to a string.
@@ -60,7 +60,7 @@ public class BarManager : MonoBehaviour
         moneyValueTotalText.text = moneyValueTotal.ToString();
         if (moneyValueTotal <= 0 && !buttonManager.askANeighborButton.activeInHierarchy)
         {
-            LoadGameOverScreen();
+            sceneController.PlayGameOverScene();
         }
     }
 
@@ -72,7 +72,7 @@ public class BarManager : MonoBehaviour
         healthBarSlider.value = healthBarSlider.value + healthValue;
         if (healthBarSlider.value <= 0)
         {
-            LoadGameOverScreen();
+            sceneController.PlayGameOverScene();
         }
     }
 
@@ -121,7 +121,7 @@ public class BarManager : MonoBehaviour
         }
         else if (moodBarSlider.value <= 0)
         {
-            LoadGameOverScreen();
+            sceneController.PlayGameOverScene();
         }
     }
     

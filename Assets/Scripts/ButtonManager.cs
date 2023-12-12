@@ -45,32 +45,18 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    public void CheckLoosingCondition(Button button1, Button button2)
-    {
-        StartCoroutine(StallLoosingCondition(button1, button2));
-    }
-
     //BENYTTES
     /// <summary>
     /// Sets ups a loosing condition for the player. If non of the buttons are interactable and the player do not have the askANeighborButton
-    /// the GameOverScreen is loaded using the LoadGameOverScreen
+    /// the GameOverScreen is loaded using the PlayGameOverScreen
     /// </summary>
     public void LoosingCondition(Button button1, Button button2)
     {
         if (!button1.interactable && !button2.interactable && !askANeighborButton.activeInHierarchy)
-        {
-            //barManager.LoadGameOverScreen();
-            sceneController.NextScene();
+        { 
+            sceneController.PlayGameOverScene();
 
         } 
-    }
-
-    //Method created to call LoosingCondition method after n seconds
-    //Change this to only wait if game is lost, not when checking loss conditions 
-    IEnumerator StallLoosingCondition(Button button1, Button button2)
-    {
-        yield return new WaitForSeconds(delayedTimeInSeconds);
-        LoosingCondition(button1, button2);
     }
 
     /// <summary>
@@ -164,12 +150,12 @@ public class ButtonManager : MonoBehaviour
         if (jGamestate.decisionJ.activeInHierarchy)
         {
             DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
-            CheckLoosingCondition(currentButton1, currentButton2);
+            LoosingCondition(currentButton1, currentButton2);
         }
         if (iGamestate.decisionI.activeInHierarchy)
         {
             DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
-            CheckLoosingCondition(currentButton1, currentButton2);
+            LoosingCondition(currentButton1, currentButton2);
         }
     }
 

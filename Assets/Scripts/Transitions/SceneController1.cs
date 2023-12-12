@@ -25,6 +25,10 @@ public class SceneController1 : MonoBehaviour
         StartCoroutine(LoadMainMenu());
     }
 
+    public void PlayGameOverScene()
+    {
+        StartCoroutine(LoadGameOverScene());
+    }
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("End");
@@ -55,6 +59,19 @@ public class SceneController1 : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadSceneAsync("Main Menu");
+
+        transitionAnim.SetTrigger("Start");
+    }
+
+    IEnumerator LoadGameOverScene()
+    {
+        yield return new WaitForSeconds(5);
+
+        transitionAnim.SetTrigger("End");
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadSceneAsync("GameOver");
 
         transitionAnim.SetTrigger("Start");
     }
