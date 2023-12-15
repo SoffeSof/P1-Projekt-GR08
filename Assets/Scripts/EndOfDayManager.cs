@@ -13,7 +13,7 @@ public class EndOfDayManager : MonoBehaviour
     private ButtonManager buttonManager;
  
     public TMP_Text incomeForTheDayText;
-    public TMP_Text AverageDailyIncomeText;
+    public TMP_Text averageDailyIncomeText;
 
     private float averageDailyIncome = 5;
     private float incomeForTheDay;
@@ -86,7 +86,7 @@ public class EndOfDayManager : MonoBehaviour
         {
             averageDailyIncome += permanentIncomeChangeX2;
         }
-        AverageDailyIncomeText.text = averageDailyIncome.ToString();
+        averageDailyIncomeText.text = averageDailyIncome.ToString();
         
     }
 
@@ -106,7 +106,7 @@ public class EndOfDayManager : MonoBehaviour
         {
             averageDailyIncome += permanentIncomeChangeZ2;
         }
-        AverageDailyIncomeText.text = averageDailyIncome.ToString();
+        averageDailyIncomeText.text = averageDailyIncome.ToString();
     }
 
     //BENYTTES

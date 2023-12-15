@@ -50,7 +50,7 @@ public class ButtonManager : MonoBehaviour
     /// Sets ups a loosing condition for the player. If non of the buttons are interactable and the player do not have the askANeighborButton
     /// the GameOverScreen is loaded using the PlayGameOverScreen
     /// </summary>
-    public void LoosingCondition(Button button1, Button button2)
+    public void CheckLoosingCondition(Button button1, Button button2)
     {
         if (!button1.interactable && !button2.interactable && !askANeighborButton.activeInHierarchy)
         { 
@@ -150,12 +150,12 @@ public class ButtonManager : MonoBehaviour
         if (jGamestate.decisionJ.activeInHierarchy)
         {
             DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
-            LoosingCondition(currentButton1, currentButton2);
+            CheckLoosingCondition(currentButton1, currentButton2);
         }
         if (iGamestate.decisionI.activeInHierarchy)
         {
             DisableButton(currentCostOfChoice1, currentButton1, currentCostOfChoice2, currentButton2);
-            LoosingCondition(currentButton1, currentButton2);
+            CheckLoosingCondition(currentButton1, currentButton2);
         }
     }
 

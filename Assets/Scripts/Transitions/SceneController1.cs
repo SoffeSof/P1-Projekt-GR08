@@ -29,6 +29,7 @@ public class SceneController1 : MonoBehaviour
     {
         StartCoroutine(LoadGameOverScene());
     }
+
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("End");
@@ -39,8 +40,6 @@ public class SceneController1 : MonoBehaviour
 
         transitionAnim.SetTrigger("Start");
     }
-    
-
     IEnumerator LoadWinningScene()
     {
         transitionAnim.SetTrigger("End");
@@ -51,7 +50,6 @@ public class SceneController1 : MonoBehaviour
 
         transitionAnim.SetTrigger("Start");
     }
-
     IEnumerator LoadMainMenu()
     {
         transitionAnim.SetTrigger("End");
@@ -62,7 +60,6 @@ public class SceneController1 : MonoBehaviour
 
         transitionAnim.SetTrigger("Start");
     }
-
     IEnumerator LoadGameOverScene()
     {
         yield return new WaitForSeconds(5);
