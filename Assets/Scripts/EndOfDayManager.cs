@@ -27,6 +27,7 @@ public class EndOfDayManager : MonoBehaviour
     /// </summary>
     public void EnableEndOfDayScreen(GameObject fact)
     {
+        //NotUsed redundant if statement
         if (fact.activeInHierarchy)
         {
             fact.SetActive(false);
@@ -56,7 +57,7 @@ public class EndOfDayManager : MonoBehaviour
 
     /// <summary>
     /// Method is used after the first one, if the daily income must to calculated based on 2 or more decisions. Same method as before, but instead of adding
-    /// temporaryIncomeChange to averageDaily, it adds it to the incomeForTheDay (calcuted in the first method).
+    /// temporaryIncomeChange to averageDaily, it adds it to the incomeForTheDay (calculated in the first method).
     /// </summary>
   
     public void UpdateIncomeForTheDay2(bool choicePickedZ, float temporaryIncomeChangeZ1, float temporaryIncomeChangeZ2)
@@ -90,7 +91,7 @@ public class EndOfDayManager : MonoBehaviour
         
     }
 
-    //BENYTTES
+    //NOT USED because same as ovenover
     //metoden opdaterer igen den nye daily income, hvis der har været 2 valg med en permanent change
     /// <summary>
     /// Method is used after the first one, if the average daily income must to calculated based on 2 or more decisions. Same as method 1
