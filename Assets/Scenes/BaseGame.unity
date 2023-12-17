@@ -1566,8 +1566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d62602cf2ce5940bee35cdbe34f5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DayTransitionAnim: {fileID: 683221885}
-  DayToDayCanvas: {fileID: 683221883}
+  dayTransitionAnim: {fileID: 683221885}
+  dayToDayCanvas: {fileID: 683221883}
   dayDisplay: {fileID: 2008652278}
   dayCount: 0
   DayEnd: {fileID: 7400000, guid: 568cee0f3efd278418eb04400f806766, type: 2}
@@ -13164,9 +13164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'X
-
-'
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22156145737f54667a7e7ba74401a239, type: 2}
   m_sharedMaterial: {fileID: 8449170692518541163, guid: 22156145737f54667a7e7ba74401a239, type: 2}
@@ -16345,11 +16343,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonManager: {fileID: 144451390}
+  sceneController: {fileID: 1559585296}
   healthBarSlider: {fileID: 1082007347}
   moodBarSlider: {fileID: 836414246}
   moneyValueTotal: 5
   moneyValueTotalText: {fileID: 1136676440}
-  sceneController: {fileID: 1559585296}
   smiley1: {fileID: 309132315}
   smiley2: {fileID: 1066691151}
   smiley3: {fileID: 352797974}
@@ -33654,7 +33652,7 @@ MonoBehaviour:
   barManager: {fileID: 864712850}
   buttonManager: {fileID: 144451390}
   incomeForTheDayText: {fileID: 456701441}
-  AverageDailyIncomeText: {fileID: 731872567}
+  averageDailyIncomeText: {fileID: 731872567}
   endOfDayScreen: {fileID: 1807564320}
 --- !u!1 &1814042420
 GameObject:
